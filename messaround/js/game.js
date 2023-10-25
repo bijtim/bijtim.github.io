@@ -25,7 +25,7 @@ function trivia() {
     } else if (tunaSelected) {
         triviaAnswer.innerHTML = fname + " you are wrong. Go to school";
     } else {
-        triviaAnswer.innerHTML = fname + " you are correct. Nice Job";
+        triviaAnswer.innerHTML = fname + "  you are correct. Nice Job!";
     }
 
 }
