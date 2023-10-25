@@ -9,7 +9,7 @@ function greet() {
 
     let age = document.getElementById("age").value;
 
-    greetParagraph.innerHTML = "Greetings" + age + " year old " + fname + " " + lname + "!";
+    greetParagraph.innerHTML = "Greetings, " + age + " year old " + fname + " " + lname + "!";
 }
 
 function trivia() {
@@ -21,11 +21,11 @@ function trivia() {
     let honeyselected = document.getElementById("honey").checked;
 
     if (chocolateSelected) {
-        triviaAnswer.innerHTML = fname + "you are wrong. Go to school";
+        triviaAnswer.innerHTML = fname + " you are wrong. Go to school";
     } else if (tunaSelected) {
         triviaAnswer.innerHTML = fname + " you are wrong. Go to school";
     } else {
-        triviaAnswer.innerHTML = fname + "you are correct. Nice Job";
+        triviaAnswer.innerHTML = fname + " you are correct. Nice Job";
     }
 
 }
@@ -39,11 +39,11 @@ function lie() {
     let africaselected = document.getElementById("africa").checked;
 
     if (frisbeeSelected) {
-        lieAnswer.innerHTML = fname + "you are wrong. I do play frisbee.";
+        lieAnswer.innerHTML = fname + " you are wrong. I do play frisbee.";
     } else if (pokerSelected) {
         lieAnswer.innerHTML = fname + " you are correct. I'm addicted to poker ";
     } else {
-        lieAnswer.innerHTML = fname + "you are wrong. My parents were born in africa";
+        lieAnswer.innerHTML = fname + " you are wrong. My parents were born in africa";
     }
 
 }
