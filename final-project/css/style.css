@@ -1,0 +1,69 @@
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: burlywood;
+
+}
+
+.logo {
+    width: 100px;
+
+    height: auto;
+
+    margin-right: 10px;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: large;
+}
+
+.nav li a:hover {
+    background-color: lightblue;
+}
+
+.active-navpage {
+    background-color: (204, 153, 255);
+}
+
+body {
+    background-color: bisque;
+}
+
+
+.coffee-shops {
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: moccasin;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+.food {
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: burlywood;
+}
+
+.food2 {
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: burlywood;
+}
