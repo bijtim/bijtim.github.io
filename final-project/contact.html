@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Vovito Website </title>
+    <title> Contact Us </title>
 
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -28,9 +28,14 @@
         }
 
         .bg-beige {
-            background-color: rgb(255, 143, 37);
+            background-color: wheat;
+        }
+
+        .centered {
+            text-align: center;
         }
     </style>
+
 </head>
 
 <body class="bg-beige ">
@@ -50,6 +55,45 @@
             </div>
         </nav>
     </div>
+    <h1>To Our Valued Customers,</h1>
+    <p>
+
+        Together, we find ourselves in an extraordinary situation with COVID-19. In the past several months, things have
+        moved very quickly, and this pandemic is affecting all of our communities, our families, our small-businesses
+        and our very way of life. We have faithfully been serving the community superior coffee, pizza and gelato/ ice
+        cream for the past 10 years, and we are so happy to be able to serve our valued patrons again after a temporary
+        pandemic closure.
+
+        We hope you will continue to support small, local businesses, like Vovito, by enjoying our exquisite coffee and
+        delicious sweet and savory snack at home or gifting it to family, friends, and your favorite Heroes! We promise
+        it will make them SMILE!
+
+        These are unprecedented times and we want to express our deepest gratitude to all those frontline workers who
+        are serving our community and saving lives daily.
+
+        If you would like to donate Vovito Coffee or a “HERO Combo” to them, we will happily ship the coffee and snacks
+        on your behalf. Thank-you for your goodwill.</p>
+    <h2>Sign up for our newsletter to stay up to date with our coffee offerings</h2>
+    <button onclick="askName()">What's your email</button>
+    <p id="ask-name"></p>
+
+    <script>
+        function askName() {
+            let nameParagraph = document.getElementById('ask-name');
+            let name = prompt('What is your email?');
+            //decide what to do
+            if (name === "email") {
+                nameParagraph.innerHTML = "Funny Email "
+            } else {
+                nameParagraph.innerHTML = "Thank You! We will email you a coupon at " + name;
+            }
+        }
+    </script>
+
+    <h2>Come Support <span style="font-weight: bold; color: brown;">Vovito</span></h2>
+    <img src="images/vovy.png" alt="foo15">
+
+
 
 </body>
 

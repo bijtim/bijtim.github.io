@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Vovito Website </title>
+    <title> Vovito Collage </title>
 
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,6 +13,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <style>
         .navbar {
             background-color: black;
@@ -28,7 +30,57 @@
         }
 
         .bg-beige {
-            background-color: rgb(255, 143, 37);
+            background-color: wheat;
+        }
+
+        .centered {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        body {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .centered {
+            background-color: bisque;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            position: absolute;
+            top: 0;
+            font-family: 'Pacifico', cursive;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .font {
+            font-family: 'pacifico', cursive;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .image-item {
+            width: 48%;
+            /* Adjust the width as needed to control the spacing */
+            text-align: center;
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -50,6 +102,42 @@
             </div>
         </nav>
     </div>
+    <br><br>
+    <div class="centered">
+        <br>
+        <h1>Vovito Photos</h1>
+    </div>
+    <br>
+    <div class="image-container">
+        <div class="image-item">
+            <img src="images/foo23.png" alt="foo15">
+            <div class="font">
+                <h1>Vovito Menu Archive</h1>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="images/foo18.jpg" alt="foo18" width="420px">
+            <div class="font">
+                <h2>Our Signature Pizza</h2>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="images/foo20.jpg" alt="foo20" width="420px">
+            <div class="font">
+                <h2>Our Family Business</h2>
+            </div>
+        </div>
+        <div class="image-item">
+            <img src="images/foo21.jpg" alt="foo21" width="420px">
+            <div class="font">
+                <h2>"Hidden Gems of Bellevue: Local Coffee Shop - Vovito"</h2>
+            </div>
+        </div>
+
+
+
+
+
 
 </body>
 

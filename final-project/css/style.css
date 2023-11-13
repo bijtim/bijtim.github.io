@@ -67,3 +67,14 @@ footer {
     border-radius: 30px;
     background-color: burlywood;
 }
+
+.information2 .info2 .food2 h3,
+.information2 .info2 .food2 p {
+    font-family: 'Pacifico', cursive;
+}
+
+.information3 .info3 .food3 h3,
+.information3 .info3 .food3 p {
+    font-family: 'Pacifico', cursive;
+
+}

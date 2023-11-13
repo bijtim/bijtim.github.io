@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Vovito Website </title>
+    <title> Vovito Store </title>
 
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +28,25 @@
         }
 
         .bg-beige {
-            background-color: rgb(255, 143, 37);
+            background-color: wheat;
+        }
+
+        .centered {
+            text-align: center;
+        }
+
+        .items {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            width: 33.33%;
+            /* Adjust the width as needed for the desired number of items per row */
+            padding: 10px;
+            text-align: center;
         }
     </style>
 </head>
@@ -50,6 +68,62 @@
             </div>
         </nav>
     </div>
+
+    <section class="coffee-shops">
+        <h2>Favorite Items at the Old Shop</h2>
+        <div class="items">
+            <div class="item">
+                <img style="width: 300px;" src="images/foo1.jpg" alt="image1">
+                <h3>Sweet Pastries</h3>
+            </div>
+            <div class="item">
+                <img style="width: 300px;" src="images/foo2.jpg" alt="image2">
+                <h3>Fluffy Croissants</h3>
+            </div>
+            <div class="item">
+                <img style="width: 300px;" src="images/foo3.avif" alt="image3">
+                <h3>Vovito Coffee</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="information2">
+        <div class="info2">
+            <div class="food2">
+                <h3> Vovito : A Family Run Coffee Shop</h3>
+                <p>Seattleites take their coffee seriously and that’s why we, at Vovito, use only the best locally
+                    roasted specialty coffee beans. These single origin and organic beans come as Fair Trade from
+                    various regions along the coffee belt, so you’ll experience exquisite coffee tastes from across the
+                    globe right in your cup.
+
+                    We pull our shots on amazing La Marzocco machine that focus on precision of extraction and espresso
+                    profiling. We offer a variety of milk and milk alternatives (Almond, Coconut, Hemp, Oat and Soy) and
+                    numerous flavor choices so you can enjoy your coffee exactly the way you like it.
+
+                    Transform your latte into a mocha with white or dark chocolate, or rediscover our classic cappuccino
+                    or indulge in a smooth, caffeine packed experience with a Nitro Cold Brew. Your drink is waiting to
+                    be discovered at Vovito – so come on in! Cin Cin!</p>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="information">
+        <div class="info1">
+            <h2> Item Selection</h2>
+            <div class="food">
+                <h3>Our Coffee Offerings</h3>
+                <p>Brazil Specialty Fair Trade Coffee Beans Whole</p>
+                <p>Swiss Water Decaf Specialty Fair Trade Coffee Beans Whole</p>
+                <p>Columbia Speciality Fair Trade Coffee Beans Whole</p>
+                <p>Tanzania Speciality Fair Trade Coffee Beans Whole</p>
+
+            </div>
+
+        </div>
+
+    </section>
 
 </body>
 
