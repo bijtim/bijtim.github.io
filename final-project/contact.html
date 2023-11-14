@@ -36,6 +36,8 @@
         }
     </style>
 
+
+
 </head>
 
 <body class="bg-beige ">
@@ -73,24 +75,61 @@
 
         If you would like to donate Vovito Coffee or a “HERO Combo” to them, we will happily ship the coffee and snacks
         on your behalf. Thank-you for your goodwill.</p>
-    <h2>Sign up for our newsletter to stay up to date with our coffee offerings</h2>
+
+    <h2>Coffee Question</h2>
+    <h3>What is your favorite type of Vovito coffee?</h3>
+    <p id="trivia-answer"></p>
+
+    <form action="trivia" id="triviaForm">
+        <input type="radio" name="trivia" id="chocolate">
+        <label for="chocolate"> Columbian</label><br>
+        <input type="radio" name="trivia" id="tuna">
+        <label for="tuna">Tanzinian</label><br>
+        <input type="radio" name="trivia" id="honey">
+        <label for="honey">Brazilian</label>
+    </form>
+    <p id="outputMessage"></p>
+    <br>
+    <input type="button" value="submit" onclick="trivia()">
+    <h2>Sign up for our newsletter to stay up to date with our
+        coffee offerings</h2>
     <button onclick="askName()">What's your email</button>
     <p id="ask-name"></p>
 
     <script>
+        var triviaForm = document.getElementById('triviaForm');
+        var outputMessage = document.getElementById('outputMessage');
+
+        triviaForm.addEventListener('change', function () {
+            var selectedOption = document.querySelector('input[name="trivia"]:checked');
+
+            if (selectedOption) {
+                outputMessage.textContent = 'This is my favorite. I love: ' + selectedOption.labels[0].textContent;
+            } else {
+                outputMessage.textContent = 'Ehh, not my favorite ';
+            }
+        }
+        );
         function askName() {
             let nameParagraph = document.getElementById('ask-name');
-            let name = prompt('What is your email?');
-            if (name === "email") {
-                nameParagraph.innerHTML = "Funny Email "
+            let email = prompt('Enter your email:');
+
+            if (email === "email@example.com") {
+                nameParagraph.innerHTML = "Funny Email";
             } else {
-                nameParagraph.innerHTML = "Thank You! We will email you a coupon at " + name;
+                nameParagraph.innerHTML = "Thank You! We will email you a coupon at " + email;
             }
         }
     </script>
 
-    <h2>Come Support <span style="font-weight: bold; color: brown;">Vovito</span></h2>
-    <img src="images/vovy.png" alt="foo15">
+
+</html>
+
+
+
+
+<h2>Come Support <span style="font-weight: bold; color: brown;">Vovito</span></h2>
+<img src="images/vovy.png" alt="foo15">
 
 
 
